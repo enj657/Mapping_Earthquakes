@@ -219,7 +219,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
       style: myStyle,
       onEachFeature: function (feature, layer) {
         console.log(layer);
-        layer.bindPopup("hi");
+        layer.bindPopup("Plate line name: " + feature.properties.Name);
       }
     }).addTo(tectonicPlates)
   })
